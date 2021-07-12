@@ -1,0 +1,146 @@
+body {
+  color: #3a3a3c;
+}
+
+.wrapper {
+  max-width: 1100px;
+}
+
+.cards {
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.card {
+  display: inline-block;
+  margin-left: 10px;
+  max-width: 100px;
+  margin-bottom: 50px;
+}
+
+.card  {
+  display: inline-block;
+}
+
+/* .card:hover *  {
+  display: inline;
+} */
+
+.card__pic {
+  width: 100px;
+  height: 150px;
+}
+
+.card__pic:hover {
+  opacity: 0.7;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__name {
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden;
+  display: block;
+  font-size: 13px;
+  color: #2e3192;
+  text-overflow: ellipsis;
+}
+
+.card__name:hover {
+  color: red;
+}
+
+.card__type span {
+  font-size: 8px;
+  text-decoration:underline
+}
+.card__type span:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card__rating {
+  font-size: 12px;
+  color: gold;
+  margin: 5px 0;
+}
+
+.price-new {
+  font-size: x-large;
+  color: #96070a;
+}
+
+.price-old {
+  font-size: medium;
+  text-decoration: line-through;
+  color: initial;
+}
+
+.card__desc {
+  font-size: 10px;
+  display: table-header-group;
+}
+
+
+.flag:checked + .wraper .card {
+  max-width: 95vw;
+}
+
+.flag:checked + .wraper .card__pic {
+  display: inline-block;
+  margin-right: 7vw;
+}
+
+.flag:checked + .wraper .wrapper-row {
+  display: inline-block;
+  margin-right: 7vw;
+  vertical-align: top;
+  width: 7em;
+}
+
+.flag:checked + .wraper .card__desc {
+  display: inline-block;
+  max-width: 150px;
+  vertical-align: top;
+}
+
+
+/* Rating - stars */
+
+.fa-lg {
+  font-size: 1.1em;
+}
+.star-rating{
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 1rem;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: right;
+	padding-left: 2px;
+	cursor: pointer;
+	color: #FFB300;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+}
