@@ -97,9 +97,9 @@ img {
 
 .flag:checked + .wraper .wrapper-row {
   display: inline-block;
-  margin-right: 7vw;
-  vertical-align: top;
-  width: 7em;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 7em;
 }
 
 .flag:checked + .wraper .card__desc {
